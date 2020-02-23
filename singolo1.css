@@ -6,7 +6,7 @@ body {
 }
 
 .header .wrapper {
-    background-image: url(assets/background/HeaderBg.png);
+    background-image: url("./assets/background/HeaderBg.png");
     display: flex;
     width: 100%;
     height: 89px;
@@ -51,7 +51,7 @@ body {
 }
 
 .header__bottom {
-    background-image: url(./assets/background/HeaderBottomBg.png);
+    background-image: url("./assets/background/HeaderBottomBg.png");
     width: 1020px;
     height: 6px;
     z-index: 3;
@@ -59,7 +59,7 @@ body {
 }
 
 .slider {
-    background-image: url(./assets/background/SliderBg.png);
+    background-image: url("./assets/background/SliderBg.png");
     width: 1020px;
     height: 600px;
     z-index: 1;
@@ -75,7 +75,7 @@ body {
     margin-top: 287px;
     height: 27px;
     width: 16px;
-    background-image: url(./assets/chevLeft.png);
+    background-image: url("./assets/chevLeft.png");
 }
 
 .chev_left:hover {
@@ -89,7 +89,7 @@ body {
     width: 458px;
     background-color: white;
     z-index: 2;
-    background-image: url(./assets/iphone/Base.png);
+    background-image: url("./assets/iphone/Base.png");
     border-radius: 27px;
 }
 
@@ -118,7 +118,7 @@ body {
     top: -59px;
     height: 339px;
     width: 194px;
-    background-image: url(./assets/iphone/ScreenYellow.png);
+    background-image: url("./assets/iphone/ScreenYellow.png");
 }
 
 .iphone_vertical .shadow {
@@ -128,7 +128,7 @@ body {
     left: 112px;
     height: 483px;
     width: 240px;
-    background-image: url(./assets/iphone/Shadow.png);
+    background-image: url("./assets/iphone/Shadow.png");
 }
 
 .iphone_horizontal {
@@ -146,7 +146,7 @@ body {
     top: 280px;
     height: 194px;
     width: 339px;
-    background-image: url(./assets/iphone/ScreenBlue.png);
+    background-image: url("./assets/iphone/ScreenBlue.png");
 }
 
 .iphone_horizontal .shadow {
@@ -155,7 +155,7 @@ body {
     left: 426px;
     height: 240px;
     width: 483px;
-    background-image: url(./assets/iphone/ShadowHoriz.png);
+    background-image: url("./assets/iphone/ShadowHoriz.png");
 }
 
 .chev_right {
@@ -163,7 +163,7 @@ body {
     margin-top: -27px;
     height: 27px;
     width: 16px;
-    background-image: url(./assets/chevRight.png);
+    background-image: url("./assets/chevRight.png");
 }
 
 .chev_right:hover {
@@ -172,7 +172,7 @@ body {
 }
 
 .slider__bottom {
-    background-image: url(./assets/background/SliderBgBottom.png);
+    background-image: url("./assets/background/SliderBgBottom.png");
     width: 1020px;
     height: 15px;
     z-index: 2;
@@ -181,7 +181,7 @@ body {
 }
 
 .services {
-    background-image: url(./assets/background/ServicesBg.png);
+    background-image: url("./assets/background/ServicesBg.png");
     width: 1020px;
     height: 495px;
     z-index: 3;
@@ -229,7 +229,7 @@ body {
     color: rgb(102, 109, 137);
     width: 300px;
     display: flex;
-    padding: 0 10px 34px 10px;
+    padding: 0 10px 32px 10px;
 }
 
 .block div {
@@ -248,6 +248,7 @@ body {
     font-size: 18px;
     font-weight: 900;
     text-align: justify;
+    letter-spacing: -0.01rem;
 }
 
 .block__description {
@@ -255,35 +256,36 @@ body {
     font-size: 12px;
     font-weight: 400;
     text-align: justify;
-    line-height: 1.83;
+    line-height: 1.34rem;
+    height: 65px;
 }
 
 .pen {
-    background-image: url(assets/services/services-logo/pen.png);
+    background-image: url("./assets/services/services-logo/pen.png");
 }
 
 .bulb {
-    background-image: url(assets/services/services-logo/bulb.png);
+    background-image: url("./assets/services/services-logo/bulb.png");
 }
 
 .heart {
-    background-image: url(assets/services/services-logo/heart.png);
+    background-image: url("./assets/services/services-logo/heart.png");
 }
 
 .phone {
-    background-image: url(assets/services/services-logo/phone.png);
+    background-image: url("./assets/services/services-logo/phone.png");
 }
 
 .bubble {
-    background-image: url(assets/services/services-logo/bubble.png);
+    background-image: url("./assets/services/services-logo/bubble.png");
 }
 
 .star {
-    background-image: url(assets/services/services-logo/star.png);
+    background-image: url("./assets/services/services-logo/star.png");
 }
 
 .services-bottom {
     height: 6px;
     margin-top: 1100px;
-    background-image: url(./assets/background/ServicesBgBottom.png);
+    background-image: url("./assets/background/ServicesBgBottom.png");
 }
