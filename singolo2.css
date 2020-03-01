@@ -86,20 +86,6 @@ footer .wrapper {
     height: 20px;
 }
 
-.tag:hover {
-    border: 1px solid #c5c5c5;
-    color: #dedede;
-    border-radius: 5px;
-    background-color: #2d303a;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
-    font-weight: 400;
-    padding: 0 5px;
-    height: 20px;
-    cursor: pointer;
-}
-
 .navigation {
     display: grid;
     justify-content: space-between;
@@ -166,6 +152,29 @@ footer .wrapper {
     width: 160px;
     justify-content: space-between;
     margin-top: 23px;
+}
+
+/*hover*/
+
+.tag:hover {
+    border: 1px solid #c5c5c5;
+    color: #dedede;
+    border-radius: 5px;
+    background-color: #2d303a;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 400;
+    padding: 0 5px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.social:hover {
+    width: 34px;
+    height: 35px;
+    cursor: pointer;
+    opacity: 50%;
 }
 
 /*Images*/
