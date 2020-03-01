@@ -9,14 +9,9 @@ body {
     padding: 0 40px;
 }
 
-main .wrapper {
+main {
     background-color: #2d2f39;
-    height: 870px;
-}
-
-.main_bottom_line {
-    height: 6px;
-    background-color: #323746;
+    height: 871px;
 }
 
 footer .wrapper {
@@ -24,19 +19,29 @@ footer .wrapper {
     background-color: #f2f2f2;
 }
 
-.footer_bottom_line {
+.main_bottom_line {
     height: 6px;
-    background-color: #ffffff;
+    background-color: #323746;
+    margin: 47px 0 0 -40px;
+    width: 1020px;
 }
 
-.header_name {
+.footer_bottom_line {
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
+    margin: 65px 0 0 -40px;
+}
+
+.header_title {
     font-size: 30px;
     line-height: 18px;
-    letter-spacing: -0.015rem;
+    letter-spacing: -0.01rem;
     color: #666d89;
     font-weight: 900;
     text-align: left;
-    padding: 69px 0 27px 0;
+    padding: 70px 0 2px 0;
+    margin-top: -1px;
 }
 
 .header_description {
@@ -46,7 +51,24 @@ footer .wrapper {
     color: #767e9e;
     font-weight: 300;
     text-align: justify;
-    letter-spacing: 0.004rem;
+}
+
+.footer_title {
+    margin-top: 0;
+    padding-top: 59px;
+    font-size: 30px;
+    letter-spacing: -0.01rem;
+    color: #666d89;
+}
+
+.footer_description {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #767e9e;
+    margin-top: -2px;
+    text-align: justify;
+    padding-bottom: 45px;
 }
 
 /*flex and grid*/
@@ -75,6 +97,7 @@ footer .wrapper {
     font-weight: 400;
     padding: 0 5px;
     height: 20px;
+    cursor: pointer;
 }
 
 .navigation {
@@ -90,7 +113,6 @@ footer .wrapper {
 
 .pictures {
     margin-top: 19px;
-    padding-bottom: 53px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -98,6 +120,52 @@ footer .wrapper {
     width: 940px;
     justify-content: space-between;
     align-items: stretch;
+    overflow: hidden;
+}
+
+.people {
+    display: grid;
+    grid: 1fr/ repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.person_info {
+    margin-left: -1px;
+}
+
+.photo_name {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 17px;
+    color: #666d89;
+    letter-spacing: -0.01rem;
+    margin: 18px 0 17px 0;
+}
+
+.photo_description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: #767e9e;
+    margin-top: -7px;
+    text-align: justify;
+    width: 301px;
+}
+
+.first_person {
+    margin-left: 1px;
+}
+
+.socials {
+    display: grid;
+    grid: 1fr / repeat(4, 1fr);
+    width: 160px;
+    justify-content: space-between;
+    margin-top: 23px;
 }
 
 /*Images*/
@@ -105,11 +173,13 @@ footer .wrapper {
 .picture {
     height: 187px;
     width: 220px;
+    padding-bottom: 20px;
 }
 
 .photo {
     width: 300px;
     height: 300px;
+    margin-left: 1px;
 }
 
 .social {
@@ -199,6 +269,8 @@ footer .wrapper {
     display: block;
     background-image: url("./assets/singolo2/photos/photo2.png");
     height: 100%;
+    width: 302px;
+    margin-left: -2px;
 }
 
 .photo3 {
