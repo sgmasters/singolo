@@ -200,6 +200,18 @@ textarea::-moz-placeholder {
     word-spacing: -1.3px;
 }
 
+.email_link {
+    text-decoration: none;
+    color: #f0d8d9;
+    text-align: left;
+}
+
+.phone_link {
+    text-decoration: none;
+    color: #f0d8d9;
+    text-align: left;
+}
+
 .button_submit {
     width: 100px;
     height: 30px;
