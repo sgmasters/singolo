@@ -19,6 +19,7 @@ body {
 .quote_form {
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 3px;
 }
 
 .contact_info {
@@ -47,7 +48,7 @@ footer .wrapper {
 }
 
 .quote_title {
-    padding: 71px 0 0 40px;
+    padding: 68px 0 0 40px;
     font-size: 30px;
     line-height: 18px;
     color: #f0d8d9;
@@ -65,7 +66,6 @@ footer .wrapper {
     color: #f0d8d9;
     font-weight: 300;
     text-align: justify;
-    word-spacing: -1.5px;
 }
 
 .quote_form input {
@@ -90,7 +90,7 @@ textarea {
     cursor: text;
 }
 
-input::placeholder {
+::placeholder {
     font-size: 12px;
     line-height: 22px;
     color: #f48c8f;
@@ -99,7 +99,7 @@ input::placeholder {
     padding-left: 15px;
 }
 
-input::-webkit-input-placeholder {
+::-webkit-input-placeholder {
     font-size: 12px;
     line-height: 22px;
     color: #f48c8f;
@@ -108,7 +108,7 @@ input::-webkit-input-placeholder {
     padding-left: 15px;
 }
 
-input::-moz-placeholder {
+::-moz-placeholder {
     font-size: 12px;
     line-height: 22px;
     color: #f48c8f;
@@ -119,17 +119,17 @@ input::-moz-placeholder {
 
 textarea::placeholder {
     font: 400 12px Lato;
-    padding-top: 11px;
+    padding-top: 8px;
 }
 
 textarea::-webkit-input-placeholder {
     font: 400 12px Lato;
-    padding-top: 11px;
+    padding-top: 8px;
 }
 
 textarea::-moz-placeholder {
     font: 400 12px Lato;
-    padding-top: 11px;
+    padding-top: 8px;
 }
 
 .comment_name {
@@ -159,7 +159,7 @@ textarea::-moz-placeholder {
 .item_info {
     width: 300px;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 20px;
     color: #f0d8d9;
     font-weight: 400;
     text-align: left;
@@ -188,7 +188,6 @@ textarea::-moz-placeholder {
 
 .location_text, .phone_text, .email_text {
     margin-left: 8px;
-    word-spacing: -1px;
 }
 
 .copyright {
@@ -197,8 +196,23 @@ textarea::-moz-placeholder {
     color: #5e657e;
     font-weight: 400;
     text-align: left;
-    padding: 28px 692px 0 42px;
+    padding: 28px 693px 0 42px;
     word-spacing: -1.3px;
+}
+
+.button_submit {
+    width: 100px;
+    height: 30px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.button_submit button {
+    width: 100%;
+    height: 100%;
+    background-color: #582527;
+    border-radius: 5px;
+    border: 0;
 }
 
 .socials {
