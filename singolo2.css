@@ -11,11 +11,10 @@ body {
 
 main {
     background-color: #2d2f39;
-    height: 871px;
+    height: 870px;
 }
 
 footer .wrapper {
-    height: 728px;
     background-color: #f2f2f2;
 }
 
@@ -36,26 +35,25 @@ footer .wrapper {
 .header_title {
     font-size: 30px;
     line-height: 18px;
-    letter-spacing: -0.01rem;
+    letter-spacing: 0.01rem;
     color: #666d89;
     font-weight: 900;
     text-align: left;
-    padding: 70px 0 2px 0;
-    margin-top: -1px;
+    padding: 72px 0 0 0;
+    margin-top: 0;
 }
 
 .header_description {
-    width: 690px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
     font-weight: 300;
-    text-align: justify;
+    letter-spacing: -0.013rem;
 }
 
 .footer_title {
     margin-top: 0;
-    padding-top: 59px;
+    padding-top: 62px;
     font-size: 30px;
     letter-spacing: -0.01rem;
     color: #666d89;
@@ -68,7 +66,8 @@ footer .wrapper {
     color: #767e9e;
     margin-top: -2px;
     text-align: justify;
-    padding-bottom: 45px;
+    padding-bottom: 42px;
+    letter-spacing: -0.013rem;
 }
 
 /*flex and grid*/
@@ -93,7 +92,7 @@ footer .wrapper {
     grid-template-columns: 29px 78px 93px 57px;
     grid-auto-columns: max-content;
     width: 287px;
-    margin-top: 11px;
+    margin-top: 10px;
     margin-left: 1px;
 }
 
@@ -128,8 +127,11 @@ footer .wrapper {
     font-size: 18px;
     line-height: 17px;
     color: #666d89;
-    letter-spacing: -0.01rem;
-    margin: 18px 0 17px 0;
+    margin: 20px 0 17px 0;
+}
+
+.spaced {
+    letter-spacing: -0.008rem;
 }
 
 .photo_description {
@@ -151,7 +153,7 @@ footer .wrapper {
     grid: 1fr / repeat(4, 1fr);
     width: 160px;
     justify-content: space-between;
-    margin-top: 23px;
+    margin-top: 21px;
 }
 
 /*hover*/
