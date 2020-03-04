@@ -3,56 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Singolo part 3</title>
+    <link rel="stylesheet" type="text/css" href="singolo3.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="quote_form">
-        <h2 class="quote_title">Get a Quote</h2>
-        <div class="quote_description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
-        <form class="quote_form">
-            <label>
-                <input class="comment_name" type="text" placeholder="Name (Required)"/>
-            </label>
-            <label>
-                <input class="comment_email" type="text" placeholder="Email (Required)"/>
-            </label>
-            <label>
-                <input class="comment_subject" type="text" placeholder="Subject"/>
-            </label>
-            <label>
-                <input class="comment_description" type="text" placeholder="Describe your project in detail..." />
-            </label>
-        </form>
-        <div class="contact_info">
-            <h3 class="contact_title">Contact Information</h3>
-            <p class="contact_description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
-            <div class="location_info">
-                <span class="location_icon"></span>
-                <div class="location_text"></div>
-            </div>
-            <div class="phone_info">
-                <span class="phone_icon"></span>
-                <div class="phone_text"></div>
-            </div>
-            <div class="email_info">
-                <span class="email_icon"></span>
-                <div class="email_text"></div>
+    <section class="quote">
+        <div class="wrapper">
+            <h2 class="quote_title">Get a Quote</h2>
+            <div class="quote_description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
+            <div class="quote_container">
+                <div class="quote_form">
+                    <label>
+                        <input class="comment_name" type="text" placeholder="Name (Required)"/>
+                    </label>
+                    <label>
+                        <input class="comment_email" type="text" placeholder="Email (Required)"/>
+                    </label>
+                    <label>
+                        <input class="comment_subject" type="text" placeholder="Subject"/>
+                    </label>
+                    <label>
+                        <textarea class="comment_description" type="text" placeholder="Describe your project in detail..."></textarea>
+                    </label>
+                </div>
+                <div class="contact_info">
+                    <h3 class="contact_title">Contact Information</h3>
+                    <p class="contact_description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                    <div class="item_info">
+                        <div class="item_icon">
+                            <span class="location_icon"></span>
+                        </div>
+                        <div class="location_text">Elm St. 14/05 Lost City</div>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_icon">
+                            <span class="phone_icon"></span>
+                        </div>
+                        <div class="phone_text">03528 331 86 35</div>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_icon">
+                            <span class="email_icon"></span>
+                        </div>
+                        <div class="email_text">info@singolo.com</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <div class="quote_bottom_line"></div>
     <footer>
-        <div class="copyright">© Copyright 2013 · by PSDchat.com</div>
-        <div class="socials">
-            <div class="social">
-                <span class="facebook"></span>
-            </div>
-            <div class="social">
-                <span class="google"></span>
-            </div>
-            <div class="social">
-                <span class="twitter"></span>
-            </div>
-            <div class="social">
-                <span class="linkedin"></span>
+        <div class="wrapper">
+            <div class="copyright">© Copyright 2013</div>
+            <div class="socials">
+                <div class="social">
+                    <span class="facebook"></span>
+                </div>
+                <div class="social">
+                    <span class="google"></span>
+                </div>
+                <div class="social">
+                    <span class="twitter"></span>
+                </div>
+                <div class="social">
+                    <span class="linkedin"></span>
+                </div>
             </div>
         </div>
     </footer>
