@@ -68,10 +68,10 @@ main {
 
 .slider {
     z-index: 1;
-    position: absolute;
+    position: relative;
+    width: 100%;
     overflow: hidden;
     margin-top: 6px;
-    background-image: url("./assets/background/SliderBg.png");
 }
 
 .slider .wrapper {
@@ -181,7 +181,7 @@ main {
     height: 15px;
     z-index: 2;
     position: absolute;
-    margin-top: 600px;
+    margin-top: -6px;
 }
 
 .services {
@@ -406,7 +406,7 @@ main {
     width: 1020px;
     height: 648px;
     background-color: #f06c64;
-    margin-top: -25px;
+    margin-top: -26px;
 }
 
 .quote_container {
@@ -535,7 +535,7 @@ textarea {
     color: #f0d8d9;
     font-weight: 400;
     word-spacing: -0.08rem;
-    margin-top: -8px;
+    margin-top: -10px;
     padding-bottom: 10px;
     text-align: justify;
 }
@@ -721,7 +721,7 @@ textarea::-moz-placeholder {
 
 .services-bottom {
     height: 6px;
-    margin-top: 1100px;
+    margin-top: 494px;
     background-image: url("./assets/background/ServicesBgBottom.png");
 }
 
@@ -903,12 +903,19 @@ textarea::-moz-placeholder {
 
 .slider_item {
     position: relative;
+    margin: 0 auto;
     display: none;
     animation: 0.5s ease-in-out;
 }
 
 .active, .next {
     display: block;
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .to-left {
@@ -921,12 +928,12 @@ textarea::-moz-placeholder {
 }
 
 .from-left {
-    animation-name: right;
+    animation-name: left;
     animation-direction: reverse;
 }
 
 .from-right {
-    animation-name: left;
+    animation-name: right;
 }
 
 @keyframes left {

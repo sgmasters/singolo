@@ -26,7 +26,7 @@ function hideItem(direction) {
   sliderItems[currentItem].classList.add(direction);
   sliderItems[currentItem].addEventListener('animationend', function () {
     this.classList.remove('active', direction);
-  })
+  });
 }
 
 function showItem(direction) {
@@ -35,7 +35,7 @@ function showItem(direction) {
     this.classList.remove('next', direction);
     this.classList.add('active');
     isEnabled = true;
-  })
+  });
 }
 
 function prevItem(i) {
@@ -56,7 +56,7 @@ document.querySelector('.chev_left').addEventListener('click', function () {
   }
 });
 
-document.querySelector('.chev_right').addEventListener('click', function (el) {
+document.querySelector('.chev_right').addEventListener('click', function () {
   if (isEnabled) {
     nextItem(currentItem);
   }
