@@ -109,13 +109,26 @@ main {
     width: 458px;
     background-color: white;
     z-index: 2;
-    background-image: url("./assets/iphone/Base.png");
     border-radius: 27px;
 }
 
 .screen {
     position: absolute;
     z-index: 3;
+}
+
+.iphone_vertical .screen {
+    left: 123px;
+    top: -59px;
+    height: 339px;
+    width: 194px;
+}
+
+.iphone_horizontal .screen {
+    left: 482px;
+    top: 280px;
+    height: 194px;
+    width: 339px;
 }
 
 .shadow {
@@ -131,14 +144,6 @@ main {
 .iphone_vertical .base {
     transform: rotate(-90deg);
     left: -10px;
-}
-
-.iphone_vertical .screen {
-    left: 123px;
-    top: -59px;
-    height: 339px;
-    width: 194px;
-    background-image: url("./assets/iphone/ScreenYellow.png");
 }
 
 .iphone_vertical .shadow {
@@ -159,14 +164,6 @@ main {
 .iphone_horizontal .base {
     top: 269px;
     left: 425px;
-}
-
-.iphone_horizontal .screen {
-    left: 482px;
-    top: 280px;
-    height: 194px;
-    width: 339px;
-    background-image: url("./assets/iphone/ScreenBlue.png");
 }
 
 .iphone_horizontal .shadow {
@@ -679,6 +676,24 @@ textarea::-moz-placeholder {
 }
 
 /*Images*/
+
+.base {
+    background-image: url("./assets/iphone/Base.png");
+}
+
+.screen1 {
+    background-image: url("./assets/iphone/ScreenYellow.png");
+}
+
+.screen2 {
+    background-image: url("./assets/iphone/ScreenBlue.png");
+}
+
+.black-screen {
+    background-color: black;
+    border-radius: 5px;
+    background-image: none;
+}
 
 .pen {
     background-image: url("./assets/services/services-logo/pen.png");

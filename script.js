@@ -61,3 +61,25 @@ document.querySelector('.chev_right').addEventListener('click', function (el) {
     nextItem(currentItem);
   }
 });
+
+document.querySelector('.iphone_vertical').addEventListener('click', function () {
+  let screen = document.querySelector('.iphone_vertical .screen');
+  if (screen.classList.contains('black-screen')) {
+    screen.classList.remove('black-screen');
+    screen.classList.add('screen1');
+  } else {
+    screen.classList.add('black-screen');
+    screen.classList.remove('screen1');
+  }
+});
+
+document.querySelector('.iphone_horizontal').addEventListener('click', function () {
+  let screen = document.querySelector('.iphone_horizontal .screen');
+  if (screen.classList.contains('black-screen')) {
+    screen.classList.remove('black-screen');
+    screen.classList.add('screen2');
+  } else {
+    screen.classList.add('black-screen');
+    screen.classList.remove('screen2');
+  }
+});
