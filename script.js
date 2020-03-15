@@ -1,6 +1,7 @@
 const pictures = document.querySelectorAll('.picture span');
 const tags = document.querySelectorAll('.tag');
 const anchors = document.querySelectorAll('a[href*="#"]');
+const popupDiv = document.querySelector('.popup');
 
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
@@ -137,4 +138,32 @@ function borderPicture(item) {
     }
   }
   item.classList.add('bordered');
+}
+
+function popup() {
+  let subject = document.querySelector('.comment_subject').getAttribute('value');
+  let popupSubject = document.querySelector('.popup-subject');
+  if (subject != '') {
+    popupSubject.setAttribute('value', 'Subject: ' + subject);
+  } else {
+    popupSubject.setAttribute('value', 'Without subject')
+  }
+
+  let description = document.querySelector('.comment_description').getAttribute('value');
+  let popupDescription = document.querySelector('.popup-description');
+  if (description != '') {
+    popupDescription.setAttribute('value', 'Description: ' + description);
+  } else {
+    popupDescription.setAttribute('value', 'Without description')
+  }
+  popupDiv.style.display ='block';
+}
+
+document.querySelector('.popupOkButton').addEventListener('click', function () {
+  closePopup();
+});
+
+function closePopup() {
+  popupDiv.style.display = 'none';
+  document.querySelector('.quote_form').reset();
 }

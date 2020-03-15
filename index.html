@@ -283,7 +283,7 @@
             cursus commodo, tortor mauris condimentum nibh.
         </div>
         <div class="quote_container">
-            <form class="quote_form" method="get" action="#">
+            <form class="quote_form" onsubmit="popup()">
                 <label>
                     <input class="comment_name" type="text" placeholder="Name (Required)" pattern="^[A-Za-z0-9]{8,}$"
                            required/>
@@ -299,9 +299,17 @@
                     <textarea class="comment_description" placeholder="Describe your project in detail..."></textarea>
                 </label>
                 <div class="button_submit">
-                    <button type="submit">Send</button>
+                    <button id="show" type="submit">Send</button>
                 </div>
             </form>
+            <div class="popup">
+                <div>
+                    <h3>The letter was sent</h3>
+                    <div class="popup-subject"></div>
+                    <div class="popup-description"></div>
+                    <div class="popupOkButton">OK</div>
+                </div>
+            </div>
             <div class="contact_info">
                 <h3 class="contact_title">Contact Information</h3>
                 <p class="contact_description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce
