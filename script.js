@@ -141,20 +141,20 @@ function borderPicture(item) {
 }
 
 function popup() {
-  let subject = document.querySelector('.comment_subject').getAttribute('value');
+  let subject = document.querySelector('.comment_subject').value;
   let popupSubject = document.querySelector('.popup-subject');
-  if (subject != '') {
-    popupSubject.setAttribute('value', 'Subject: ' + subject);
+  if (subject != '' && subject != null) {
+    popupSubject.innerText = 'Subject: ' + subject;
   } else {
-    popupSubject.setAttribute('value', 'Without subject')
+    popupSubject.innerText = 'Without subject';
   }
 
-  let description = document.querySelector('.comment_description').getAttribute('value');
+  let description = document.querySelector('.comment_description').value;
   let popupDescription = document.querySelector('.popup-description');
-  if (description != '') {
-    popupDescription.setAttribute('value', 'Description: ' + description);
+  if (description != '' && description != null) {
+    popupDescription.innerText = 'Description: ' + description;
   } else {
-    popupDescription.setAttribute('value', 'Without description')
+    popupDescription.innerText = 'Without description';
   }
   popupDiv.style.display ='block';
 }
