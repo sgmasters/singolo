@@ -10,8 +10,12 @@ main {
     height: 869px;
 }
 
-.people_section .wrapper, main .wrapper {
+.people_section .wrapper {
     padding: 0 40px;
+}
+
+main .wrapper {
+    padding: 0 35px;
 }
 
 .header .wrapper {
@@ -271,7 +275,7 @@ main {
 .main_bottom_line {
     height: 6px;
     background-color: #323746;
-    margin: 47px 0 0 -40px;
+    margin: 61px 0 0 -35px;
     width: 1020px;
 }
 
@@ -288,7 +292,7 @@ main {
     color: #666d89;
     font-weight: 900;
     text-align: left;
-    padding: 69px 0 2px 0;
+    padding: 68px 0 3px 4px;
     margin-top: 0;
 }
 
@@ -297,11 +301,12 @@ main {
     line-height: 30px;
     color: #767e9e;
     font-weight: 300;
+    margin-left: 5px;
 }
 
 .people_section_title {
     margin-top: 0;
-    padding-top: 60px;
+    padding-top: 58px;
     font-size: 30px;
     color: #666d89;
 }
@@ -339,15 +344,16 @@ main {
     grid-auto-columns: max-content;
     width: 287px;
     margin-top: 10px;
-    margin-left: 1px;
+    margin-left: 6px;
 }
 
 .pictures {
-    margin-top: 20px;
+    margin-top: 14px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 621px;
+    height: 612px;
     width: 940px;
     justify-content: space-between;
     align-items: stretch;
@@ -406,7 +412,7 @@ main {
     width: 1020px;
     height: 648px;
     background-color: #f06c64;
-    margin-top: -26px;
+    margin-top: -24px;
 }
 
 .quote_container {
@@ -719,7 +725,7 @@ textarea::-moz-placeholder {
 
 .services-bottom {
     height: 6px;
-    margin-top: 494px;
+    margin-top: 495px;
     background-image: url("./assets/background/ServicesBgBottom.png");
 }
 
@@ -950,4 +956,9 @@ textarea::-moz-placeholder {
     to {
         left: 0;
     }
+}
+
+.bordered {
+    margin: -5px;
+    border: 5px solid #F06C64;
 }

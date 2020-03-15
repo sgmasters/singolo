@@ -1,3 +1,5 @@
+const pictures = document.querySelectorAll('.picture span');
+const tags = document.querySelectorAll('.tag');
 const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
@@ -11,24 +13,24 @@ for (let anchor of anchors) {
       block: 'start'
     })
   })
-}
 
+}
 let sliderItems = document.querySelectorAll('.slider_item');
 let currentItem = 0;
-let isEnabled = true;
 
+let isEnabled = true;
 function moveItem(i) {
   currentItem = (i + sliderItems.length) % sliderItems.length;
-}
 
+}
 function hideItem(direction) {
   isEnabled = false;
   sliderItems[currentItem].classList.add(direction);
   sliderItems[currentItem].addEventListener('animationend', function () {
     this.classList.remove('active', direction);
   });
-}
 
+}
 function showItem(direction) {
   sliderItems[currentItem].classList.add('next', direction);
   sliderItems[currentItem].addEventListener('animationend', function () {
@@ -36,18 +38,19 @@ function showItem(direction) {
     this.classList.add('active');
     isEnabled = true;
   });
-}
 
+}
 function prevItem(i) {
   hideItem('to-right');
   moveItem(i - 1);
   showItem('from-left');
-}
 
+}
 function nextItem(i) {
   hideItem('to-left');
   moveItem(i + 1);
   showItem('from-right');
+
 }
 
 document.querySelector('.chev_left').addEventListener('click', function () {
@@ -84,8 +87,6 @@ document.querySelector('.iphone_horizontal').addEventListener('click', function 
   }
 });
 
-let tags = document.querySelectorAll('.tag');
-
 for (let tag of tags) {
   tag.addEventListener('click', function () {
     let pinned = document.querySelector('.pinned');
@@ -99,14 +100,41 @@ for (let tag of tags) {
 }
 
 function shufflePictures() {
-  let pictures = document.querySelectorAll('.picture span');
-
   for (let picture of pictures) {
-    let number = picture.classList.item(0).substr(7);
-    let newNumber = (12 + parseInt(number)) % 12 + 1;
-    let newStyle = picture.classList.item(0).replace(number, newNumber +'');
-
-    picture.classList.remove('picture' + number);
-    picture.classList.add(newStyle);
+    if (picture.classList.contains('bordered')) {
+      picture.classList.remove('bordered');
+      incrementPictureNumber(picture);
+      picture.classList.add('bordered');
+    } else {
+      incrementPictureNumber(picture);
+    }
   }
+}
+
+function incrementPictureNumber(picture) {
+  let number = picture.classList.item(0).substr(7);
+  let newNumber = (12 + parseInt(number)) % 12 + 1;
+  let newStyle = picture.classList.item(0).replace(number, newNumber +'');
+
+  picture.classList.remove('picture' + number);
+  picture.classList.add(newStyle);
+}
+
+for (let picture of pictures) {
+  picture.addEventListener('click', function () {
+    if (!picture.classList.contains('bordered')) {
+      borderPicture(picture);
+    } else {
+      picture.classList.remove('bordered');
+    }
+  });
+}
+
+function borderPicture(item) {
+  for (let picture of pictures) {
+    if (picture.classList.contains('bordered')) {
+      picture.classList.remove('bordered');
+    }
+  }
+  item.classList.add('bordered');
 }
