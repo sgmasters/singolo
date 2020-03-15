@@ -83,3 +83,30 @@ document.querySelector('.iphone_horizontal').addEventListener('click', function 
     screen.classList.remove('screen2');
   }
 });
+
+let tags = document.querySelectorAll('.tag');
+
+for (let tag of tags) {
+  tag.addEventListener('click', function () {
+    let pinned = document.querySelector('.pinned');
+
+    if (!this.classList.contains('pinned')) {
+      pinned.classList.remove('pinned');
+      shufflePictures();
+      this.classList.add('pinned');
+    }
+  });
+}
+
+function shufflePictures() {
+  let pictures = document.querySelectorAll('.picture span');
+
+  for (let picture of pictures) {
+    let number = picture.classList.item(0).substr(7);
+    let newNumber = (12 + parseInt(number)) % 12 + 1;
+    let newStyle = picture.classList.item(0).replace(number, newNumber +'');
+
+    picture.classList.remove('picture' + number);
+    picture.classList.add(newStyle);
+  }
+}

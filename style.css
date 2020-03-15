@@ -609,14 +609,12 @@ textarea {
 .tag:hover {
     border: 1px solid #c5c5c5;
     color: #dedede;
-    border-radius: 5px;
-    background-color: #2d303a;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
-    font-weight: 400;
-    padding: 0 5px;
-    height: 20px;
+    cursor: pointer;
+}
+
+.tag.pinned {
+    border: 1px solid #c5c5c5;
+    color: #dedede;
     cursor: pointer;
 }
 
